@@ -5,7 +5,9 @@ from typing_extensions import Annotated
 if TYPE_CHECKING:
     from vonage import Client
 
-from pydantic import BaseModel, StringConstraints, ValidationError, field_validator, conint
+from pydantic import BaseModel, ValidationError, conint
+from pydantic.types import StringConstraints
+from pydantic.functuonal_vaildators import field_validator
 from typing import List
 
 import copy
